@@ -6,7 +6,7 @@ var subjectdb = [
     ['DBMS','DAA','OS','ATCD','ELECTIVE'], 
     ['WT','SE','MPI', 'ELECTIVE1','ELECTIVE2'], 
     ['IOT','OOD','ELECTIVE 1','ELECTIVE 2','ELECTIVE 3'], 
-    ['OPEN ELECTIVE 1', 'OPEN ELECTIVE 2','AD1',"AD2","Ad3"]
+    ['OPEN ELECTIVE 1', 'OPEN ELECTIVE 2','AD1',"AD2","AD3"]
   ];
 var x = localStorage.getItem("yearval");
 console.log(x);
