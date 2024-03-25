@@ -3,40 +3,108 @@
 <head>
 	<title>Study Comrade</title>
 	<link rel="stylesheet" href="stylesheets/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+	<header class="header" id="header">
+		<nav class="nav container">
+		   <h3 href="#" class="nav__logo">STUDY COMRADE</h3>
+
+		   <div class="nav__menu" id="nav-menu">
+			  <ul class="nav__list">
+				 <li class="nav__item">
+					<a href="#" class="nav__link">Home</a>
+				 </li>
+
+				 <li class="nav__item">
+					<a href="#" class="nav__link">About Us</a>
+				 </li>
+
+				 <li class="nav__item">
+					<a href="#" class="nav__link">Services</a>
+				 </li>
+
+				 <li class="nav__item">
+					<a href="#" class="nav__link">Featured</a>
+				 </li>
+
+				 <li class="nav__item">
+					<a href="#" class="nav__link">Contact Us</a>
+				 </li>
+			  </ul>
+
+			  <!-- Close button -->
+			  <div class="nav__close" id="nav-close">
+				 <i class="ri-close-line"></i>
+			  </div>
+		   </div>
+
+		   <div class="nav__actions">
+			  <!-- Search button -->
+			  <i class="ri-search-line nav__search" id="search-btn"></i>
+
+			  <!-- Login button -->
+			  <i class="ri-user-line nav__login" id="login-btn"></i>
+
+			  <!-- Toggle button -->
+			  <div class="nav__toggle" id="nav-toggle">
+				 <i class="ri-menu-line"></i>
+			  </div>
+		   </div>
+		</nav>
+	 </header>
+
+	 <!--==================== SEARCH ====================-->
+	 <div class="search" id="search">
+		<form action="" class="search__form">
+		   <i class="ri-search-line search__icon"></i>
+		   <input type="search" placeholder="What are you looking for?" class="search__input">
+		</form>
+
+		<i class="ri-close-line search__close" id="search-close"></i>
+	 </div>
+
+	 <!--==================== LOGIN ====================-->
+	 <div class="login" id="login">
+		<form action="" class="login__form">
+		   <h2 class="login__title">Log In</h2>
+		   
+		   <div class="login__group">
+			  <div>
+				 <label for="email" class="login__label">Email</label>
+				 <input type="email" placeholder="Write your email" id="email" class="login__input">
+			  </div>
+			  
+			  <div>
+				 <label for="password" class="login__label">Password</label>
+				 <input type="password" placeholder="Enter your password" id="password" class="login__input">
+			  </div>
+		   </div>
+
+		   <div>
+			  <p class="login__signup">
+				 You do not have an account? <a href="#">Sign up</a>
+			  </p>
+  
+			  <a href="#" class="login__forgot">
+				 You forgot your password
+			  </a>
+  
+			  <button type="submit" class="login__button">Log In</button>
+		   </div>
+		</form>
+
+		<i class="ri-close-line login__close" id="login-close"></i>
+	 </div>
+
 <div class="introlines">
 	<div align="">
 		<h1 align="center">STUDY COMRADE</h1>
 	</div>
 	
 </div>
-
-<!-- <div class="imgslide">
-	<h3 align="center" id="inh3">Follow the instructions below to generate a schedule</h3>
-	<div class="slideshow-container">
-	  <!-- Full-width images with number and caption text 
-	 <div class="mySlides fade">
-	    <img src="images/img1.png" style="width:100%">
-	  </div>
-
-	  <div class="mySlides fade">
-	    <img src="images/img2.png" style="width:100%">
-	  </div>
-
-	  <div class="mySlides fade">
-	    <img src="images/img3.png" style="width:100%">
-	  </div>
-
-	  <!-- Next and previous buttons 
-	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-	</div>
-	<br>
-</div> -->
-
-
 
 
 	<div class="login-box">
@@ -74,10 +142,5 @@
 
 
 <script type="text/javascript" src="scripts/index.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.2/cpexcel.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.2/xlsx.full.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.2/xlsx.full.min.map"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.2/xlsx.js"></script>
-<script src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js"></script> -->
 </body>
 </html>
