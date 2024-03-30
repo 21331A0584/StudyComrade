@@ -1,101 +1,44 @@
-const form = document.getElementById('myForm');
+/*=============== SHOW MENU ===============*/
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
 
-// Add event listener for form submission
-form.addEventListener('submit', function(event) {
-    // Get the year and semester select elements
-    const yearSelect = document.getElementById('year');
-    const semesterSelect = document.getElementById('semester');
-    
-    // Check if year or semester is not selected
-    if (yearSelect.value === '' || semesterSelect.value === '') {
-        // Prevent the default form submission
-        event.preventDefault();
-        
-        // Display a message to the user
-        alert('Please select both year and semester.');
-    }
-});
-var slideIndex = 1;
-showSlides(slideIndex);
+/* Menu show */
+navToggle.addEventListener('click', () =>{
+   navMenu.classList.add('show-menu')
+})
 
-function getIndexVars() {
-  var iyear = document.getElementById("year").value;
-  var isem = document.getElementById("sem").value;
-  localStorage.setItem("yearval", iyear);
-  localStorage.setItem("semval", isem);
-}
+/* Menu hidden */
+navClose.addEventListener('click', () =>{
+   navMenu.classList.remove('show-menu')
+})
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+/*=============== SEARCH ===============*/
+const search = document.getElementById('search'),
+      searchBtn = document.getElementById('search-btn'),
+      searchClose = document.getElementById('search-close')
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+/* Search show */
+searchBtn.addEventListener('click', () =>{
+   search.classList.add('show-search')
+})
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace("active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
+/* Search hidden */
+searchClose.addEventListener('click', () =>{
+   search.classList.remove('show-search')
+})
 
+/*=============== LOGIN ===============*/
+const login = document.getElementById('login'),
+      loginBtn = document.getElementById('login-btn'),
+      loginClose = document.getElementById('login-close')
 
+/* Login show */
+loginBtn.addEventListener('click', () =>{
+   login.classList.add('show-login')
+})
 
-// Navbar
-let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-
-
-menu.onclick = () => {
-    navbar.classList.toggle('active');
-}
-
-
-window.onscroll = () => {
-    navbar.classList.remove('active');
-}
-// Dark Mode
-let darkmode = document.querySelector('#darkmode');
-
-
-darkmode.onclick = () => {
-    if(darkmode.classList.contains('bx-moon')){
-        darkmode.classList.replace('bx-moon','bx-sun');
-        document.body.classList.add('active');
-    }else{
-        darkmode.classList.replace('bx-sun','bx-moon');
-        document.body.classList.remove('active');
-    }
-}
-
-
-// Scroll Reveal
-const sr = ScrollReveal ({
-    origin: 'top',
-    distance: '40px',
-    duration: 2000,
-    reset: true
-});
-
-
-
-
-sr.reveal(`.home-text, .home-img,
-            .about-img, .about-text,
-            .box, .s-box,
-            .btn, .connect-text,
-            .contact-box`, {
-    interval: 200
+/* Login hidden */
+loginClose.addEventListener('click', () =>{
+   login.classList.remove('show-login')
 })
