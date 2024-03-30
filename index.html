@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Study Comrade</title>
 	<link rel="stylesheet" href="stylesheets/index.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+	<header class="header" id="header">
+		<nav class="nav container">
+		<h2 href="#" class="nav__logo">STUDY COMRADE</h2>
 
-<div class="introlines">
-	<div align="">
-		<h1 align="center">STUDY COMRADE</h1>
-	</div>
-	
-</div>
+		<div class="nav__menu" id="nav-menu">
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a href="home.html" class="nav__link">Home</a>
+				</li>
+
+				<li class="nav__item">
+					<a href="about.html" class="nav__link">About Us</a>
+				</li>
+
+				<li class="nav__item">
+					<a href="index.html" class="nav__link">Schedule</a>
+				</li>
+
+				<li class="nav__item">
+					<a href="contact.html" class="nav__link">Contact Us</a>
+				</li>
+			</ul>
+
+			
+		</div>
+
+		
+		</nav>
+	</header>
 
 
 	<div class="login-box">
@@ -22,34 +46,48 @@
 	<h2>Enter your details here</h2>
 	<form>
 		<div class="textbox">
-			<table >
-					<tr>
-						<td>
-							<strong>Enter your year:</strong>
-						</td>
-						<td>
-							<input type="number" min="1" max="4" required placeholder="Study Year" id="year">
-						</td>
-					</tr>
+			<table>
+				<tr>
+					<td>
+						<strong>Select your year:</strong>
+					</td>
+					<td>
+						<select id="year" required>
+							<option value="" disabled selected>Select Year</option>
+							<option value="1">1st Year</option>
+							<option value="2">2nd Year</option>
+							<option value="3">3rd Year</option>
+							<option value="4">4th Year</option>
+						</select>
+					</td>
+				</tr>
 			</table>
 		</div>
 		<div class="textbox">
-			<table >
-					<tr>
-						<td>
-							<strong>Enter your semester:</strong>
-						</td>
-						<td>
-							<input type="number" min="1" max="2" required placeholder="1 or 2" name="" id="sem">
-						</td>
-					</tr>
+			<table>
+				<tr>
+					<td>
+						<strong> your semester:</strong>
+					</td>
+					<td>
+						<select id="sem" required>
+							<option value="" disabled selected>Select Semester</option>
+							<option value="1">1st Semester</option>
+							<option value="2">2nd Semester</option>
+						</select>
+					</td>
+				</tr>
 			</table>
 		</div>
+		
 	</form>
+
 		<br><a href="form.html"><button onclick="getIndexVars()" class="btn" id="btnb">Submit</button></a>
 		<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 		<script src="https://mediafiles.botpress.cloud/897595c2-4a68-4c74-8d68-bdd14d6a330e/webchat/config.js" defer></script>
 
 <script type="text/javascript" src="scripts/index.js"></script>
+
 </body>
+
 </html>

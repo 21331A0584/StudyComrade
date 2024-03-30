@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Study Comrade</title>
+    <link rel="stylesheet" href="stylesheets/contact.css">
+</head>
+    <body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <h2 href="#" class="nav__logo">STUDY COMRADE</h2>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="home.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Schedule</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h2>Our Information</h2>
+            <p>We are a team of 4 students from MVGR College of Engineering.</p>
+            <p>Feel free to reach out to us via email or phone:</p>
+            <ul>
+                <li><strong>Email:</strong> kodidasusaimanikanta8341@gmail.com</li>
+                <li><strong>Phone:</strong> +91 9346859378</li>
+            </ul>
+        </section>
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="#" method="POST"> <!-- Adjust the action attribute as needed -->
+                <div>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="3" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/897595c2-4a68-4c74-8d68-bdd14d6a330e/webchat/config.js" defer></script>
+    
+</body>
+</html>
