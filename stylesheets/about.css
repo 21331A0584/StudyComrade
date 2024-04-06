@@ -74,4 +74,14 @@ footer {
 footer p {
     margin: 0;
 }
-
+.nav__logo {
+    color: hsl(230, 75%, 15%);
+    font-weight: 600;
+    transition: color .4s;
+  }
+  
+  .nav__link {
+    color: hsl(230, 75%, 15%);
+    font-weight: 600;
+    transition: color .4s;
+  }

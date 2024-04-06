@@ -94,3 +94,14 @@ nav ul li a {
   margin: 0 auto; /* Center the image horizontally */
   /* Add additional styling as needed */
 }
+.nav__logo {
+    color: hsl(230, 75%, 15%);
+    font-weight: 600;
+    transition: color .4s;
+  }
+  
+  .nav__link {
+    color: hsl(230, 75%, 15%);
+    font-weight: 600;
+    transition: color .4s;
+  }

@@ -143,3 +143,14 @@ main {
 .contact-form form button:hover {
     background-color: hsl(230, 16%, 62%);
 }
+.nav__logo {
+    color: hsl(230, 75%, 15%);
+    font-weight: 600;
+    transition: color .4s;
+  }
+  
+  .nav__link {
+    color: hsl(230, 75%, 15%);
+    font-weight: 600;
+    transition: color .4s;
+  }
