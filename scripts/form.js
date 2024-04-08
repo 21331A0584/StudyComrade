@@ -75,7 +75,7 @@ function getVars() {
 
 //-----------------------------------------------------------------------------------------
 
-  algop1(nod,s1,s2,s3,s4,s5,subjects);
+  scheduleAlgo(nod,s1,s2,s3,s4,s5,subjects);
 
 }
 
@@ -86,7 +86,7 @@ function indexOfTT(chk,subj) {
     }
 }
 
-function algop1(days,as1,as2,as3,as4,as5,subject) {
+function scheduleAlgo(days,as1,as2,as3,as4,as5,subject) {
   var slot = []
   var rate = []
   for(i=0;i<5;i++)
@@ -101,7 +101,7 @@ function algop1(days,as1,as2,as3,as4,as5,subject) {
   var c = [];
   var s = (days-5)*2;
   while(s>4)
-    {
+  {
         c[0] = s;
         for(i=0;i<5;i++)
             slot[i]+=(rate[i]*(s))/50;
@@ -112,7 +112,7 @@ function algop1(days,as1,as2,as3,as4,as5,subject) {
         c[1] = s;
         if(c[1] - c[0] == 0)
              break;
-    }
+  }
     for(i=0;i<5;i++)
         if(s>0)
         {
@@ -279,7 +279,7 @@ function algop1(days,as1,as2,as3,as4,as5,subject) {
                         width: 500
                     }]
                 };
-                pdfMake.createPdf(docDefinition).download("Schedule.pdf");
+                pdfMake.createPdf(docDefinition).download("Schedule_StudyComrade.pdf");
             }
         });
   }
