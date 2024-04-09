@@ -40,15 +40,16 @@ function getVars() {
         var timeDiff = examDateTime.getTime() - today.getTime();
         var nod = Math.ceil(timeDiff / (1000 * 3600 * 24));
         
-        if (nod < 0) {
+        if (nod < 1) {
             alert("Invalid exam date. Please select a future date.");
             return;
         }
+        nod--;
     } else {
         // Number of days is provided
         nod = parseInt(nod);
-        if (nod < 0) {
-            alert("Number of days cannot be negative.");
+        if (nod < 1) {
+            alert("Number of days cannot be less than 1.");
             return;
         }
     }
