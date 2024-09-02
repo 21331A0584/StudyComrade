@@ -17,7 +17,7 @@ Study Comrade is a web-based application designed to help students plan and mana
 - **Libraries**: 
   - PDFMake (for PDF generation)
   - HTML2Canvas (for converting the web page to canvas)
-
+  
 ## Folder Structure
 ```plaintext
 Study-Comrade/
@@ -31,4 +31,3 @@ Study-Comrade/
 │   └── index.js        # JavaScript for the main page
 │   └── form.js         # JavaScript for the form page
 └── README.md           # This file
-
