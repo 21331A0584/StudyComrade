@@ -1,5 +1,5 @@
 ﻿# StudyComrade
-Site Link --> https://21331a0584.github.io/StudyComrade/
+Site Link --> https://sai-manikanta-07.github.io/StudyComrade/
 
 
 Study Comrade is a web-based application designed to help students plan and manage their study schedules based on their academic year, semester, and available time before exams. The application generates a custom schedule that prioritizes subjects and allocates time accordingly.
@@ -30,4 +30,5 @@ Study-Comrade/
 ├── scripts/
 │   └── index.js        # JavaScript for the main page
 │   └── form.js         # JavaScript for the form page
+
 └── README.md           # This file
